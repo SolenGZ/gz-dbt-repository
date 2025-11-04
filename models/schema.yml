@@ -3,15 +3,15 @@ version: 2
 sources: 
   - name: gz_raw_data
     tables: 
-      - name: raw_gz_product
-        identifier: product
+      - name: product
+        identifier: raw_gz_product
         description: produits vendus par greenweez
         columns:
           - name: products_id
           - name: purchSE_PRICE
 
-      - name: raw_gz_sales
-        identifier: sales
+      - name: sales
+        identifier: raw_gz_sales
         description: ventes
         columns:
           - name: date_date
@@ -20,8 +20,8 @@ sources:
           - name: revenue
           - name: quantity
 
-      - name: raw_gz_ship
-        identifier: ship
+      - name: ship
+        identifier: raw_gz_ship
         description: expedition des commandes
         columns:
           - name: orders_id
