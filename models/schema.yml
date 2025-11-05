@@ -52,3 +52,55 @@ sources:
             description: frais logistiques
           - name: ship_cost
             description: coût d'envoi
+
+      - name: adwords
+        identifier: raw_gz_adwords 
+        columns: 
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPNG_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+          
+
+      - name: bing
+        identifier: raw_gz_bing
+        columns: 
+         - name: date_date
+         - name: paid_source
+         - name: campaign_key
+         - name: camPNG_name
+         - name: ads_cost
+         - name: impression
+         - name: click
+      
+  
+      - name: criteo
+        identifier: raw_gz_criteo
+        columns: 
+        - name: date_date
+        - name: paid_source
+        - name: campaign_key
+        - name: camPNG_name
+        - name: ads_cost
+        - name: impression
+        - name: click
+
+      - name: facebook
+        identifier: raw_gz_facebook
+        columns: 
+        - name: date_date
+        - name: paid_source
+        - name: campaign_key
+        - name: camPNG_name
+        - name: ads_cost
+        - name: impression
+        - name: click
+
+models:
+  - name: stg_gz_raw_data__adwords
+  - name: stg_gz_raw_data__bing
+  - name: stg_gz_raw_data__criteo
+  - name: stg_gz_raw_data__facebook
