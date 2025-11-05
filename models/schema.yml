@@ -101,6 +101,25 @@ sources:
 
 models:
   - name: stg_gz_raw_data__adwords
+
   - name: stg_gz_raw_data__bing
+
   - name: stg_gz_raw_data__criteo
+
   - name: stg_gz_raw_data__facebook
+  
+  - name: int_campaigns.sql
+    description: union de toutes les tables de campagnes publicitaires (adwords, criteo, bing, facebook)
+    columns: 
+      - name: date_date
+      - name: paid_source
+      - name: campaign_key
+      - name: pk
+        tests: 
+          - unique
+          - not_null
+      - name: campaign_name
+      - name: ads_cost
+      - name: impression
+      - name: click
+
